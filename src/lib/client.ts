@@ -1,4 +1,4 @@
-import { createAuthClient } from "better-auth/solid";
+import { createAuthClient } from "better-auth/client";
 import { inferAdditionalFields } from "better-auth/client/plugins";
 import { QueryCache, QueryClient } from "@tanstack/solid-query";
 import { RPCLink } from "@orpc/client/fetch";
