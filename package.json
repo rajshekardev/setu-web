@@ -6,10 +6,19 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "gen": "orpc-gen --input='../setu/src/orpc/routers/index.ts' --output='./src/types/'",
+    "gen:watch": "orpc-gen --input='../setu/src/orpc/routers/index.ts' --output='./src/types/' --watch"
   },
   "dependencies": {
+    "@astrojs/solid-js": "^5.1.2",
     "@astrojs/vercel": "^9.0.0",
-    "astro": "^5.15.3"
+    "@tailwindcss/vite": "^4.1.16",
+    "@tanstack/solid-query": "^5.90.10",
+    "@tanstack/solid-query-devtools": "^5.90.4",
+    "astro": "^5.15.3",
+    "solid-devtools": "^0.34.4",
+    "solid-js": "^1.9.10",
+    "tailwindcss": "^4.1.16"
   }
 }
